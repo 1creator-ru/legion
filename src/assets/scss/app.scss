@@ -1,6 +1,2 @@
-body {
-    background: gray;
-    span {
-        color: gray;
-    }
-}
+@import 'variables';
+@import 'pages/index/offer';
