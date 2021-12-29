@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font: $base-font;
+    font-weight: 400;
+}
+
+.h1, h1 {
+    font: $h1-font;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h1-font-sm;
+        margin-bottom: 1rem;
+    }
+}
+
+.h1_super {
+    font-size: 52px;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h1-font-sm;
+    }
+}
+
+.h2, h2 {
+    font: $h2-font;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h2-font-sm;
+    }
+}
+
+.h3, h3 {
+    font: $h3-font;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h3-font-sm;
+    }
+}
+
+
+.h4, h4 {
+    font: $h4-font;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h4-font-sm;
+    }
+}
+
+.h5, h5 {
+    font: $h5-font;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down(md) {
+        font: $h5-font-sm;
+    }
+}
+
+.h5_primary {
+    color: $primary;
+}
+
+a {
+    color: $primary;
+
+    &:hover {
+        color: darken($primary, 10%);
+    }
+}
+
+[role=button] {
+    cursor: pointer;
+}
+
+small, .small {
+    line-height: 1.1;
+    font: $small-font;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 0;
+
+    & + & {
+        margin-top: 15px;
+    }
+}
+
+.text-muted {
+    opacity: 0.6;
+    color: inherit !important;
+}
+
+.list {
+    padding: 0;
+
+    .list-item {
+        display: flex;
+        margin-bottom: 25px;
+
+        i {
+            font-size: 24px;
+            color: $primary;
+            margin-right: 16px;
+        }
+    }
+}

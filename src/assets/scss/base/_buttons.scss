@@ -1,0 +1,98 @@
+.button {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    font-weight: 300;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 12px;
+        padding: 13px 17px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button__icon {
+    line-height: 16px;
+    font-size: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+    &.button__icon_right {
+        margin-right: 0;
+        margin-left: 8px;
+    }
+}
+
+.button_primary {
+    background: $primary;
+    color: white;
+    font-weight: 300;
+    border: 1px solid $primary;
+
+    &:hover {
+        background: mix(black, $primary, 10%);
+    }
+}
+
+.button_light {
+    background: #D9D9DA;
+    color: $dark;
+    border: 1px solid #D9D9DA;
+
+    &:hover {
+        background: mix(black, $light, 10%);
+    }
+}
+
+.button_white {
+    background: white;
+    color: #616C78;
+    border: 1px solid #616C78;
+
+    &:hover {
+        background: rgba(white, 0.2);
+    }
+}
+
+.button_gray {
+    background: white;
+    color: $gray;
+    border: 1px solid $gray;
+
+    &:hover {
+        background: rgba($gray, 0.05);
+    }
+}
+
+.button_outline {
+    background: transparent;
+    color: $secondary;
+    border: 1px solid currentColor;
+
+    &.button_white {
+        color: white;
+    }
+
+    &:hover {
+        background: rgba(black, 0.05);
+    }
+}
+
+.button_link {
+    background: transparent;
+    padding: 0;
+    text-decoration: underline;
+    color: $primary;
+    text-transform: none;
+}

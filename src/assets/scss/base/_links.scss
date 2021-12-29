@@ -1,0 +1,66 @@
+.link {
+    color: $gray;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.link_dark {
+    color: $dark;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.link_secondary {
+    color: $secondary;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.link_light {
+    color: $light;
+
+    &:hover {
+        color: $light;
+    }
+}
+
+.link_primary {
+    color: $primary;
+
+    &:hover {
+        color: $dark;
+    }
+}
+
+.link_underlined {
+    border-bottom: 2px solid $primary;
+    padding-bottom: 5px;
+    display: inline-block;
+    color: unset;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.link_lined {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.link__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: $primary;
+    line-height: 16px;
+    text-decoration: none;
+}

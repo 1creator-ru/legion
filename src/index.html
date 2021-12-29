@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('parts/head.html', {
-    "title": "Главная"
-})
-<body>
-    @@include('parts/header.html', {})
-    <main>
-        @@include('pages/index/offer.html', {})
-    </main>
-    @@include('parts/footer.html', {})
-    @@include('parts/scripts.html', {})
-</body>
-
+    @@include('parts/head.html', { "title": "Главная" })
+    <body>
+        @@include('parts/header.html', {})
+        <main>
+            @@include('pages/index/offer.html', {})
+            @@include('pages/index/tasks.html', {})
+            @@include('pages/index/quote.html', {})
+            @@include('pages/index/recommendations.html', {})
+        </main>
+        @@include('parts/footer.html', {}) @@include('parts/scripts.html', {})
+    </body>
 </html>

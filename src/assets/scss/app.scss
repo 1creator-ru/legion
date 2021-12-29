@@ -1,2 +1,14 @@
-@import 'variables';
-@import 'pages/index/offer';
+@import "variables";
+@import "base/base";
+@import "base/typo";
+@import "base/links";
+@import "base/tables";
+@import "base/buttons";
+@import "base/inputs";
+
+@import "pages/index/offer";
+@import "pages/index/tasks";
+@import "pages/index/quote";
+@import "pages/index/recommendations";
+
+@import "parts/header";

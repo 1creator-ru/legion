@@ -1,0 +1,36 @@
+.quote {
+    padding: 70px 0;
+    .quote__person {
+        border-radius: 50%;
+        width: 100%;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .quote__wrapper {
+        margin-left: 100px;
+        position: relative;
+        @include media-breakpoint-down(md) {
+            margin-left: 70px;
+        }
+        &::before {
+            content: "«";
+            display: block;
+            color: $primary;
+            position: absolute;
+            left: -70px;
+            top: 0;
+            font-weight: 600;
+            font-size: 100px;
+        }
+    }
+    .quote__text {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .quote__signature {
+    }
+}
