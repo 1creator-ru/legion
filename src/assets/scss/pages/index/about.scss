@@ -1,0 +1,57 @@
+.about {
+    padding: 60px 0 68px 0;
+    .about__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-auto-rows: 1fr;
+        background: url("/assets/images/index/shield.svg") no-repeat center;
+        background-size: contain;
+    }
+
+    .about__list-item {
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        margin-bottom: 30px;
+
+        &:nth-child(odd) {
+            .list-item__text {
+                text-align: end;
+            }
+        }
+        &:last-child {
+            .list-item__index::before {
+                display: none;
+            }
+        }
+        .list-item__index {
+            grid-column: 2/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 76px;
+            color: $primary;
+            position: relative;
+            &::before {
+                content: "";
+                width: 1px;
+                height: 30px;
+                background: $primary;
+                position: absolute;
+                bottom: -30px;
+            }
+        }
+        .list-item__text {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 113%;
+        }
+    }
+}
