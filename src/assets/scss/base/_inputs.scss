@@ -1,4 +1,5 @@
 .input {
+    font: $form-font;
     background: none;
     font-size: 14px;
     position: relative;
@@ -46,12 +47,13 @@
     position: absolute;
     left: 0;
     top: 10px;
-    transition: all .1s linear;
+    transition: all 0.1s linear;
     cursor: text;
     pointer-events: none;
 }
 
-.input__input:focus, .input__input_filled, {
+.input__input:focus,
+.input__input_filled {
     & + .input__label {
         font-size: 12px;
         top: -4px;
@@ -78,4 +80,10 @@
     &:hover {
         opacity: 1;
     }
+}
+.form-control {
+    font: $form-font;
+}
+.form-label {
+    font: $form-font;
 }

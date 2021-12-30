@@ -6,7 +6,7 @@ export const js = () => {
             // .pipe(babel({
             //     presets: ['@babel/preset-env']
             //   }))
-            // .pipe(concat('app.js'))
+            // .pipe(concat("app.js"))
             .pipe(
                 webpack({
                     mode: "development",

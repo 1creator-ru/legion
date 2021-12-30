@@ -1,0 +1,11 @@
+.licenses {
+    padding: 60px 0;
+    img {
+        height: 150px;
+        @include media-breakpoint-down(md) {
+            height: auto;
+            width: 90px;
+            align-self: center;
+        }
+    }
+}

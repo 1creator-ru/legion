@@ -1,0 +1,17 @@
+.feedback-form__wrapper {
+    padding: 16px;
+    background: white;
+}
+.feedback-form {
+    padding: 50px 70px;
+    background: $secondary;
+    font: $form-family;
+}
+
+.feedback-form__social {
+    width: 220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
